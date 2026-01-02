@@ -1,0 +1,12 @@
+{
+	"info": {
+		"name": "Blog API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{ "name": "Get All Blogs", "request": { "method": "GET", "url": "http://127.0.0.1:5000/blogs" } },
+		{ "name": "Get Blog by ID", "request": { "method": "GET", "url": "http://127.0.0.1:5000/blogs/1" } },
+		{ "name": "Create Blog", "request": { "method": "POST", "body": { "mode": "raw", "raw": "{\"title\": \"New Blog\", \"description\": \"Content\", \"category\": \"Life\"}", "options": { "raw": { "language": "json" } } }, "url": "http://127.0.0.1:5000/blogs" } },
+		{ "name": "Update Blog", "request": { "method": "PUT", "body": { "mode": "raw", "raw": "{\"title\": \"Updated Title\"}", "options": { "raw": { "language": "json" } } }, "url": "http://127.0.0.1:5000/blogs/1" } }
+	]
+}
